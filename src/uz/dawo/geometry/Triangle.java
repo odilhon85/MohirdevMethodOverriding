@@ -1,4 +1,6 @@
-package uz.dawo;
+package uz.dawo.geometry;
+
+import uz.dawo.geometry.GeometricFigure;
 
 public class Triangle extends GeometricFigure {
 

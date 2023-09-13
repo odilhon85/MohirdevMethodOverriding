@@ -1,4 +1,4 @@
-package uz.dawo;
+package uz.dawo.geometry;
 
 public class GeometricFigure {
 

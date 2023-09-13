@@ -1,26 +1,25 @@
-package uz.dawo;
+package uz.dawo.geometry;
 
-public class Trapezium extends GeometricFigure {
+import uz.dawo.geometry.GeometricFigure;
+
+public class Rectangle extends GeometricFigure {
 
     private int sideA;
     private int sideB;
-    private int high;
 
-    public Trapezium(int sideA, int sideB, int high) {
+    public Rectangle(int sideA, int sideB) {
         this.sideA = sideA;
         this.sideB = sideB;
-        this.high = high;
     }
 
     @Override
     public double area() {
-        return (sideA + sideB) * high * 0.5;
+        return sideA * sideB;
     }
 
     @Override
     public double perimetr() {
-        double c = Math.sqrt(Math.pow((sideA - sideB) / 2, 2) + Math.pow(high, 2));
-        return sideA + sideB + 2 * c;
+        return 2 * (sideA + sideB);
     }
 
     public int getSideA() {
@@ -37,13 +36,5 @@ public class Trapezium extends GeometricFigure {
 
     public void setSideB(int sideB) {
         this.sideB = sideB;
-    }
-
-    public int getHigh() {
-        return high;
-    }
-
-    public void setHigh(int high) {
-        this.high = high;
     }
 }
